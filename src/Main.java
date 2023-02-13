@@ -4,6 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
 
+        System.out.println("Телефонный справочник");
+
         HashMap<String, String> phoneBook = new HashMap<>();
 
         phoneBook.put("Абсатаров Игорь", "+7-911-564-89-56");
