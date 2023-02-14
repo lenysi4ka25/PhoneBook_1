@@ -21,6 +21,7 @@ public class Main {
         phoneBook.put("Миронова Елена", "+7-962-159-20-58");
         System.out.println(phoneBook.get("Воробьев Денис"));
         System.out.println(phoneBook.keySet());
+        System.out.println(phoneBook.values());
 
         for (Map.Entry<String, String> stringStringEntry : phoneBook.entrySet()) {
             System.out.println(stringStringEntry.getKey() + " " + stringStringEntry.getValue());
