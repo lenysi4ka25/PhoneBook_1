@@ -1,8 +1,11 @@
 import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
 
     public static void main(String[] args) {
+
+        System.out.println("Телефонный справочник");
 
         HashMap<String, String> phoneBook = new HashMap<>();
 
@@ -18,5 +21,12 @@ public class Main {
         phoneBook.put("Миронова Елена", "+7-962-159-20-58");
         System.out.println(phoneBook.get("Воробьев Денис"));
         System.out.println(phoneBook.keySet());
+        System.out.println(phoneBook.values());
+
+        for (Map.Entry<String, String> stringStringEntry : phoneBook.entrySet()) {
+            System.out.println(stringStringEntry.getKey() + " " + stringStringEntry.getValue());
+        }
+
+
     }
 }
